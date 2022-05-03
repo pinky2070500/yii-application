@@ -21,20 +21,30 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="blank">
+<body class="bg-gradient-primary">
 <?php $this->beginBody() ?>
+<div class="container">
 
-<div class="wrap h-100 d-flex flex-column">
-    <?php echo $this->render('_header') ?>
-    <main class="d-flex" style="flex: 1">
-        <div style="margin: auto; width: 500px; padding: 10px">
-            <?= Alert::widget() ?>
-            <?= $content ?>
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-12 col-md-9">
+
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <?php echo $content?>
+                </div>
+            </div>
+
         </div>
-    </main>
+
+    </div>
+
 </div>
 
 <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

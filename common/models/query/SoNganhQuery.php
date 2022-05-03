@@ -38,6 +38,6 @@ class SoNganhQuery extends ActiveQuery
 
     public function byKeyword($keyword)
     {
-        return $this -> andWhere("where ten like :keyword".['ten'=>$keyword]);
+        return $this -> andWhere("ten like :keyword", ['keyword'=>$keyword]);
     }
 }

@@ -3,6 +3,7 @@
 use yii\bootstrap4\LinkPager;
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1>Ket qua</h1>
 
     <p>
-    <form action="<?php echo \yii\helpers\Url::to(['so-nganh/search'])?>" class="d-flex">
+    <form action="<?php echo Url::to(['so-nganh/search'])?>" class="d-flex">
         <input class="form-control" type="search" placeholder="Search"
                     name="keyword">
         <button class="btn btn-outline-success">Search</button>

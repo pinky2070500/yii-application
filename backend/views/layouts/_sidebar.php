@@ -12,14 +12,6 @@ use yii\bootstrap4\Nav; ?>
                     'label' => 'Map',
                     'url' => ['/site/index']
                 ],
-                [
-                    'label' => 'Danh sách Sở-Ngành',
-                    'url' => ['/so-nganh/index']
-                ],
-                [
-                    'label' => 'Danh sách Khu công nghiệp',
-                    'url' => ['/khu-cn/index']
-                ]
             ]
         ]);
     } catch (Exception $e) {
